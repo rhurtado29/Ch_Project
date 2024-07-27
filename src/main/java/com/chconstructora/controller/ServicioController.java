@@ -10,15 +10,15 @@ import org.springframework.web.bind.annotation.RequestMapping;
 
 @Controller
 @Slf4j
-@RequestMapping("/servicio")
+@RequestMapping("/inicio")
 public class ServicioController {
     @Autowired
     private ServicioService servicioService;
 
-    @GetMapping("/inicio")
+    @GetMapping("/servicio")
     public String inicio(Model model) {
         var servicios = servicioService.getServicios(false);
         model.addAttribute("servicios", servicios);
-        return "servicio/inicio"; // Make sure this matches the file path
+        return "index"; 
     }
 }
