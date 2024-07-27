@@ -11,14 +11,14 @@ import org.springframework.web.bind.annotation.RequestMapping;
 
 @Controller
 @Slf4j
-@RequestMapping("/acerca")
-public class AcercaController {
+@RequestMapping("/proyecto")
+public class GaleriaController {
    
 
-    @GetMapping("/about")
+    @GetMapping("/proyectos")
     public String about(Model model) {
         
         model.addAttribute("acerca de", "this is the about page");
-        return "acerca/about"; 
+        return "proyecto/proyectos"; 
     }
 }
