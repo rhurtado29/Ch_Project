@@ -19,6 +19,6 @@ public class AcercaController {
     public String about(Model model) {
         
         model.addAttribute("acerca de", "this is the about page");
-        return "acerca/about"; 
+        return "acerca/about"; // Make sure this matches the file path
     }
 }
