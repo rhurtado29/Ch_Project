@@ -38,5 +38,5 @@ public class Proyecto implements Serializable {
         this.activo = activo;
     }
 	
-    
+    //commit
 }

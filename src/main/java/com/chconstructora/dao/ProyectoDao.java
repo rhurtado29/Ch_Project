@@ -11,6 +11,7 @@ import org.springframework.data.jpa.repository.JpaRepository;
  *
  * @author rebecahurtado
  */
+//commit
 public interface ProyectoDao extends JpaRepository<Proyecto,Long> {
     
 }

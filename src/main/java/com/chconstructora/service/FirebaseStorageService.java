@@ -1,7 +1,7 @@
 package com.chconstructora.service;
 
 import org.springframework.web.multipart.MultipartFile;
-
+//commit
 public interface FirebaseStorageService {
 
     public String cargaImagen(MultipartFile archivoLocalCliente, String carpeta, Long id);

@@ -21,4 +21,5 @@ public class GaleriaController {
         model.addAttribute("acerca de", "this is the about page");
         return "proyecto/proyectos"; 
     }
+    //comit
 }
