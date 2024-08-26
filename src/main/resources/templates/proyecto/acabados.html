@@ -1,0 +1,107 @@
+<!-- comit -->
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+    <head th:replace="layout/plantilla :: head">
+        <title>Galeria Proyectos</title>
+    </head>
+    <body>
+        <header th:replace="layout/plantilla :: header"></header>
+        
+        <main>
+
+      <h1 id="h1Project">Personalización Acabados</h1>
+      <div class="container">
+      <div class="row">
+        <div class="col-md-4">
+          <div class="card text-center" style="width: 18rem;">
+            <img class="card-img-top" th:src="@{/img/PisosSPC.webp}" alt="Card image cap"/>
+            
+            
+            <div class="card-body">
+                <h5 class="card-title">Pisos SPC</h5>
+              <p  class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequatur architecto temporibus quos dolorem</p>
+              <a th:fragment="botonContacto" href="https://api.whatsapp.com/send?phone=50688030578&text=¡Hola%20CH%20Constructora!%20Quiero%20hablar%20con%20un%20agente.%20Mi%20nombre%20y%20asunto%20son%3A" class="botonContacto">Más</a>
+            </div>
+          </div>
+
+        </div>
+        <div class="col-md-4">
+          <div class="card text-center" style="width: 18rem;">
+            <img class="card-img-top" th:src="@{/img/tablillaPVC.webp}" alt="Card image cap"/>
+            <div class="card-body">
+                 <h5 class="card-title"> Tablilla PVC</h5>
+              <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequatur architecto temporibus quos dolorem</p>
+              <a th:replace="proyecto/acabados:: botonContacto"></a>
+            </div>
+          </div>
+
+        </div>
+        <div class="col-md-4">
+          <div class="card text-center" style="width: 18rem;">
+            <img class="card-img-top" th:src="@{/img/TablillaDecorativa.webp}" alt="Card image cap"/>
+            <div class="card-body">
+                <h5 class="card-title"> Tablilla Decorativa</h5>
+              <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequatur architecto temporibus quos dolorem.</p>
+              <a th:replace="proyecto/acabados:: botonContacto"></a>
+            </div>
+          </div>
+
+        </div>
+        <div class="col-md-4">
+          <div class="card text-center" style="width: 18rem;">
+            <img class="card-img-top" th:src="@{/img/paredpvc.jpeg}" alt="Card image cap"/>
+            <div class="card-body">
+                <h5 class="card-title">Pared PVC</h5>
+              <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequatur architecto temporibus quos dolorem</p>
+              <a th:replace="proyecto/acabados:: botonContacto"></a>
+            </div>
+          </div>
+
+        </div>
+        <div class="col-md-4">
+          <div class="card text-center" style="width: 18rem;">
+            <img class="card-img-top" th:src="@{/img/policarbonato.webp}" alt="Card image cap"/>
+            <div class="card-body">
+                <h5 class="card-title">Policarbonato</h5>
+              <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequatur architecto temporibus quos dolorem.</p>
+              <a th:replace="proyecto/acabados:: botonContacto"></a>
+            </div>
+          </div>
+
+        </div>
+        <div class="col-md-4">
+          <div class="card text-center" style="width: 18rem;">
+            <img class="card-img-top" th:src="@{/img/acabados.png}" alt="Card image cap"/>
+            <div class="card-body">
+                <h5 class="card-title">Acabados</h5>
+              <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequatur architecto temporibus quos dolorem</p>
+              <a th:replace="proyecto/acabados:: botonContacto"></a>
+            </div>
+          </div>
+
+        </div>
+       
+      
+        
+
+      </div>
+          </div>
+
+      
+
+     
+  
+    </main>
+       
+        <footer th:replace="layout/plantilla :: footer"></footer>
+        
+        <script>
+    $(".card").mouseenter(function(){
+
+      $(".card-text").slideDown(1000);
+
+    });
+
+ </script>
+    </body>
+</html>

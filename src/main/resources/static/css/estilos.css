@@ -18,6 +18,51 @@ html {
     scroll-snap-type: y mandatory;
     
 }
+.boton {
+    background-color: var(--blanco);
+    color: var(--grisClaro);
+    padding: 1rem 3rem;
+    margin-top: 1rem;
+    font-size: 1.5rem;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: .5rem;
+    width: 90%;
+    text-align: center;
+    border: none;
+}
+.botonContacto{
+     background-color: var(--grisOscuro);
+    color: var(--grisClaro);
+    padding: 1rem 2rem;
+    margin-top: 1rem;
+    font-size: 1rem;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: .5rem;
+    width: 70%;
+    text-align: center;
+    border: none;
+    
+}
+@media(min-width:768px){
+    .boton{
+        width: auto;
+    }
+
+}
+.boton:hover{
+    cursor: pointer;
+}
+h1 {
+    font-size: 4rem;
+}
+
+.nav-link{
+    display: block;
+    text-align: center;
+   
+}
 .hero{
     background-image: url('/img/test.jpeg');
     background-repeat: no-repeat;
@@ -120,7 +165,17 @@ li{
 .body-img{
     display: flex;
     
+    
 }
+
+.card-img-top{
+    width: 286px;
+    height: 180px;
+}
+.card-title h5{
+    margin-bottom: 1rem;
+}
+
 .mb-4{
     
     background-size:cover;
@@ -146,17 +201,22 @@ li{
 }
 
 
-.col-md-4 p{
-   color: var(--grisOscuro);
-    text-align: center;
-}
+
 
 /* Inico de Projects page style*/
 .col-md-4{
-    padding:30px
+    padding:30px;
    
 }
-
+#h1Project{
+    color: var(--dorado);
+    text-align: center;
+    font-size: 3rem;
+    padding-top: 20px;
+}
+.card-text{
+    display: none;
+}
 /*Footer*/
 .footer{
     background-color: #161616;
@@ -178,11 +238,13 @@ li{
     align-items: center;
 
 }
+
 .pie .col-md-4 h3{
   font-weight: bold;
   margin-top: 40px;
   margin-bottom: 20px;
   color: var(--dorado);
+ 
 
 }
 .pie .col-md-4 li{
